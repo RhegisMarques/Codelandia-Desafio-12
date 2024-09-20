@@ -3,11 +3,275 @@
 :root {
   --brand-color: #ec1f1d;
 
-  --dark: #111826;
+  --dark: #000000;
 
   --white: #ffffff;
 }
 
-body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white)
 }
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(0deg, #1A2841 0%, #0B1322 100%, #080A0E 100%);
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logo {
+  width: 24px;
+
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 31px 0;
+  gap: 24px;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.64px;
+  text-align: left;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 64px 0;
+  gap: 40px;
+
+
+}
+
+.bg-img {
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 0 24px;
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+.logo2 {
+  width: 180px;
+  height: 87.48px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+button {
+  padding: 12px 32px;
+  gap: 10px;
+  border: none;
+  border-radius: 8px 8px;
+  opacity: 0px;
+  background: #EC1F1D;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.64px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: var(--dark);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 64px 24px;
+  gap: 32px;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.64px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 640px) {
+
+  header {
+    padding: 0 32px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+
+  .bg-img {
+    width: 420px;
+    height: 303px;
+  }
+
+  .text {
+    width: 420px;
+    height: 303px;
+    display: flex;
+    align-items: start;
+    margin: 0 0 0 32px;
+
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: left;
+      text-align: start;
+    }
+  }
+
+  .features {
+    display: flex;
+    flex-direction: row;
+    padding: 48px 32px;
+  }
+
+  .card {
+    h1 {
+      text-align: start;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+    }
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/background.svg);
+    background-size: contain;
+    background-position: center center;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    gap: 841px;
+  }
+
+  .main {
+    display: flex;
+    padding: 136px;    
+
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 327px;
+    gap: 32px;
+
+    h1 {}
+
+    p {
+      font-family: Plus Jakarta Sans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+    gap: 80px;
+    opacity: 0px;
+    background: #111826;
+  }
+
+  .card {
+    width: 320px;
+    height: 113px;
+    gap: 16px;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 25.2px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.64px;
+      text-align: center;
+    }
+  }
